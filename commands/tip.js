@@ -43,7 +43,7 @@ module.exports = async ({ message, reply, params, tipping, isDm }) => {
     const actualAmount = await tipping.transfer(message.member.user.id, toUserId, bchAmount);
     const amountText = await formatBchWithUsd(actualAmount);
 
-    await reply(`you tipped ${amountText} to ${toUserRaw}!`);
+    await reply(`you tipped ${toUserRaw} ${amountText}! `);
   } catch (e) {
     await reply(`something crashed: ${e.message}`);
     throw e;
