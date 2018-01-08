@@ -67,8 +67,9 @@ const createRaffle = ({
     const lines = [
       `<@${
       member.user.id
-      }> has won the random raffle! I've DM'd you instructions.`,
+      }> has won the random raffle!`,
       `They won: ${amountText}`,
+      `Congratulations! I've DM'd you instructions to access them.`,
       `For the rest of you, stay logged into the chat and you could be next!`,
     ];
 
